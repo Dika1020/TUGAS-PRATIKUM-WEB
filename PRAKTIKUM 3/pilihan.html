@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAT NOW</title>
+    <!--STYLE-->
+    <style>
+        *, html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: beige;
+            background-image: url("bkg\ pilihan.jpg");
+            background-size: 100%;
+            margin: auto;
+            background-repeat: no-repeat;
+        }
+    nav{
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 2rem;
+    }
+
+
+    nav ul{
+        align-items: center;
+        gap: 4rem;
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: 0;
+        font-family: sans-serif;
+        color: #191919;
+        font-weight: 600;
+        padding: 8px 0;
+        transition: all;
+        transition-duration: 300ms;
+        border-bottom: rgba(0, 0, 0, 0);
+    }
+
+    nav ul li a:hover{
+        border-bottom: 1px solid orange;
+        color: orange;
+    }
+    nav ul li .dropdown{
+        display: none;
+    }
+    nav ul li:hover .dropdown{
+        display: block;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.772);
+    }
+    </style>  
+    <!--STYLE END-->
+</head>
+<body>
+    <nav>
+        <img width="80px"  src="d:\GAMBAR WEB\Logo Pizza No color.png" alt="my-logo"/>
+        <ul>
+            <li><a href="WEB JUALAN.html">Home</a></li>
+            <li><a href="#">Contact</a>
+                <!--DROPDOWN-->
+                <ul class="dropdown">
+            <li><a href="https://instagram.com/dikaa_oi?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/indikaganteng?mibextid=ZbWKwL">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@DIKAFPS">Youtube</a></li>
+                <!--END-->
+                </ul>
+            </li>
+            <li>
+               <a href="pilihan.html">Menu</a>
+            </li>             
+        </ul>
+        </nav>
+        <br/>   
+        <!--Limo-->
+        <div style="text-align: center;">
+            <a href="WEB JUALAN.html">
+            <img width="500px" src="d:\GAMBAR WEB\limo.webp">
+        </a>
+        </div>
+        <!--PRODUK LIMO-->
+        <div style="text-align: center;">
+            <h2>Dapatkan Segera</h2>
+            <h3>Pizza Limo</h3>
+            <p>Hanya dengan</p>
+            <h4>Rp.250.000</h4>
+        </div>
+
+         <!--Limo-->
+         <div style="text-align: center;">
+            <a href="WEB JUALAN.html">
+            <img width="200px" src="d:\GAMBAR WEB\Pizza Super.avif">
+        </a>
+        </div>
+        <!--PRODUK LIMO-->
+        <div style="text-align: center;">
+            <h2>Dapatkan Segera</h2>
+            <h3>Pizza Super</h3>
+            <p>Mulai Dari</p>
+            <h4>Rp.50.000</h4>
+            <P>Daging Sapi,Ayam Asap</P>
+            <p>Jamur,Onion Dan Keju Mozarella</p>
+        </div>
+
+</body>
+</html>

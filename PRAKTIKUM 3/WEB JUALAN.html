@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA NOW</title>
+    <!--STYLE-->
+    <style>
+        *, html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body{
+        background-image: url("bkg\ web\ 3.avif");
+        background-size: 50%;
+        margin: auto;
+    }
+
+    nav{
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 2rem;
+    }
+
+
+    nav ul{
+        align-items: center;
+        gap: 4rem;
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: 0;
+        font-family: sans-serif;
+        color: #b9a9a9;
+        font-weight: 600;
+        padding: 8px 0;
+        transition: all;
+        transition-duration: 300ms;
+        border-bottom: rgba(0, 0, 0, 0);
+    }
+
+    nav ul li a:hover{
+        border-bottom: 1px solid orange;
+        color: orange;
+    }
+    div form {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(221, 217, 201);
+    }
+    nav ul li .dropdown{
+        display: none;
+    }
+    nav ul li:hover .dropdown{
+        display: block;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.772);
+    }
+    </style>  
+    <!--STYLE END-->  
+</head>
+<bodY>
+    <nav>
+        <img width="80px" src="d:\GAMBAR WEB\Logo Pizza Home.png" alt="my-logo"/>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a>
+                <!--DROPDOWN-->
+                <ul class="dropdown">
+            <li><a href="https://instagram.com/dikaa_oi?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/indikaganteng?mibextid=ZbWKwL">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@DIKAFPS">Youtube</a></li>
+                <!--END-->
+                </ul>
+            </li>
+            <li>
+               <a href="pilihan.html">Menu</a>
+            </li>             
+        </ul>
+        <!--NAV END-->
+    </nav>
+        <!--FORM PIZZA-->
+    <div>
+        <br/>
+        <br/>
+    <form action="hasil form.html">
+        <!--input1-->
+         <label for="Nama.html"><p>Alamat Gmail:</label></p>
+         <input type="text" required />
+         <br/>
+         <br/>
+        <!--input1-->
+        <label for="Nama.html"><p>Nama Penerima:</label></p>
+        <input type="text" required />
+        <br/>
+        <br/>
+        <!--input 2-->
+        <label for="Jumlah Pizza.html"><p>Jumlah Pizza :</label></p>
+        <input type="number" required />
+        <br/>
+        <br/>
+         <!--input 3-->
+         <label for="Nomor Hp.html"><p>Nomor Hp :</label></p>
+         <input type="number" required />
+         <br/>
+         <br/>
+        <!--input 4-->
+        <label for="alamat"> Alamat :</label> <br />
+        <textarea cols="30" rows="4"></textarea>
+        <br/>
+        <br/>
+        <!--input 5 -->
+        <label for="hobi">Ekstra :</label>
+        <input type="checkbox" name="KEJU" id="EKSTRA" value="KEJU" />KEJU
+        <input type="checkbox" name="SAUS" id="SAUS" value="SAUS" />SAUS
+        <input type="checkbox" name="TOPPING" id="TOPPING" value="TOPPING" />TOPPING
+        <br />
+        <br />
+         <!--input 6 -->
+         <label for="Payment">Payment :</label>
+         <select name="Payment" id="Payment">
+            <option value="COD">COD</option>
+            <option value="TRANSFER BANK">TRANSFER BANK</option>
+            <option value="E-WALLET">E-WALLET</option>
+            </select>
+            <br />
+            <br />
+            <!--INPUT 7-->
+            <label for="Ukuran">Ukuran Pizza :</label>
+         <select name="Ukuran Pizza" id="Ukuran Pizza">
+            <option value="PIZZA LIMO">PIZZA LIMO</option>
+            <option value="LARGE">LARGE</option>
+            <option value="MEDIUM">MEDIUM</option>
+            <option value="SMALLL">SMALL</option>
+            </select>
+            <br />
+            <br />
+            <!--tombol kirim-->
+            <input type="submit" value="Pesan Sekarang" />
+            <input type="reset"  value="Batal"/>
+            
+    </form>
+    <div style="color: white;">
+        <br/>
+        <i><b></b>Pastikan Pesanan Anda Sesuai!</i>
+        <p></p>
+        <i><b></b>Silahkan Klik Menu Untuk Memastikan Pesanan</i>
+    </div>
+    </div>
+</bodY>
+</html>
