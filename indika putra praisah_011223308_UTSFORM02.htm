@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak{
+            margin-right: 60px;
+            }
+            
+            .kotak-1{
+                margin-right: 40px;
+        }   
+        .kotak-2{
+            margin-right: 22px;
+    }
+    .kotak-3{
+        margin-right: 26px;
+}
+
+.kotak-4{
+    margin-right: 55px;
+}
+
+.kotak-5{
+    margin-right: 85px;
+    }
+
+.kotak-6{
+    margin-right: 115px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Booking Servie</legend>
+    <!--input DROPDOWN -->
+    <label class="kotak" for="kendaraan">Jenis kendaraan :</label>
+    <select name="kendaraan" id="kendaraan">
+       <option value="motor">MOTOR</option>
+       <option value="MOBIL">MOBIL</option>
+       <option value="KENDARAAN BERAT">KENDARAN BERAT</option>
+       </select>
+       <br />
+       <br />
+
+       <label class="kotak">Nama Pemesan :</label>
+       <input  type="text" required />
+       <br/>
+       <br/>
+
+       <label class="kotak-1" for="Kategori Peminjam">Kategori Peminjam</label>
+        <input type="radio" id="pribadi" name="peminjam" value="pribadi">
+        <label for="laki-laki">Pribadi</label>
+        <input type="radio" id="perempuan" name="gender" value="perempuan">
+        <label for="perempuan">Perusahaan/organisasi</label>
+        <br/>
+        <br/>
+
+       <!--input TEXT AREA-->
+     <label class="kotak-2" for="Deskripsi Kebutuhan"> Deskripsi Kebutuhan :</label>
+     <textarea cols="50" rows="2"></textarea>
+     <br/>
+     <br/>
+
+      <!--input TAHUN -->
+      <label class="kotak-3" for="Pemeriksaan">Jam,Tanggal Service :</label>
+      <input type="date" id="nama" name="nama" />
+      <br/><br />
+
+      <label class="kotak-4">Request Montir :</label>
+      <input type="text" required /></td>
+      <br/>
+      <br/>
+    
+
+        <!--input NOMOR-->
+     <label class="kotak-5" for="Nomor Hp.html">Telpon/HP :</label>
+        <input type="number" required />
+        <br/>  
+        <br/>
+
+        <!-- input email -->
+        <label class="kotak-6">Email :</label>
+        <input type="text" required /></td>
+        <br/>
+        <br/>
+
+         <!--input kirim-->
+         <input type="submit" id="submit" name="submit" />
+         <input type="reset" id="reset"   name="reset" />
+         <br/><br />
+    </fieldset>
+</body>
+</html>
