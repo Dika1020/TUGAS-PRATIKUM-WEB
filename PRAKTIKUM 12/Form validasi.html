@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">FORM VALIDASI</h1>
+    <form onsubmit="submitdata(); return false;">
+        <!-- INPUT USERNAME -->
+        <label for="username"><p>Masukkan Username</label></p>
+        <input type="text" id="username"/>
+        <br/>
+        <!-- INPUT PASSWORD -->
+        <label for="password"><p>Masukkan Password</label></p>
+        <input type="password" id="password">
+        <br/>
+        <!-- INPUT GMAIL -->
+        <label for="gmail"><p>Masukkan Email</label></p>
+        <input type="email" id="Gmail"/>
+        <br/>
+        <!-- INPUT WAKTU -->
+        <label for="time"><p>waktu pemberangkatan</label></p>
+        <input type="time" id="time"/>
+        <br/>
+        <!-- INPUT keberangkatan -->
+        <label for="username"><p>Masukkan Kota Tujuan</label></p>
+        <input type="text" id="keberangkatan"/>
+        <br/>
+        <br/>
+        <button onclick="submitdata()">Validasi</button>
+    </form>
+    <script>
+        function submitdata() {
+            let username        = document.getElementById("username").value;
+            let password        = document.getElementById("password").value;
+            let gmail           = document.getElementById("Gmail").value;
+            let time            = document.getElementById("time").value;
+            let keberangkatan   = document.getElementById("keberangkatan").value;
+        
+            // Validasi formulir
+            if (username === "indika" && password === "123" && gmail === "indika@gmail.com" && time === "15:30" && keberangkatan === "Bandung") {
+                alert( "Nama : " + username + "\n email : " + gmail + "\n Waktu : " + time + "\n Keberangkatan : " + keberangkatan);
+            } else {
+               //CEK PASSWORD
+                let errorMessage = " PASTIKAN ANDA MEMASUKKAN DATA YANG VALID ";
+                if (username !== "indika") {
+                    errorMessage += "\n Username : yang anda masukkan salah";
+                }
+                if (password !== "123") {
+                    errorMessage += "\n Password : yang anda masukkan salah";
+                }
+                if (gmail !== "indika@gmail.com") {
+                    errorMessage += "\n Gmail : yang anda masukkan salah";
+               
+                }
+                if (time !== "15:30") {
+                    errorMessage += "\n Waktu : yang anda masukkan salah";
+                }
+                if (keberangkatan !== "Bandung") {
+                    errorMessage += "\n Tempat : yang anda masukkan kurang tepat";
+                }
+
+                alert(errorMessage);
+            
+        }
+    }
+        
+    </script>
+</body>
+</html>
+                            <!-- saya sudah berusaha semaksimal mungkin ka -->
